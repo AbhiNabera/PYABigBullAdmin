@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:background="#fff"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leaderBoard"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/userName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hammersmithoneregular"
+            android:maxWidth="150dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:requiresFadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:fadingEdge="horizontal"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:textAllCaps="true"
+            android:text="Username"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/phoneNumber"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hammersmithoneregular"
+            android:maxWidth="150dp"
+            android:singleLine="true"
+            android:layout_below="@+id/userName"
+            android:padding="5dp"
+            android:textAllCaps="true"
+            android:text="Mobile Number"
+            android:textColor="#000"
+            android:textSize="14sp"
+            />
+
+        <Switch
+            android:id="@+id/enabSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userName"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

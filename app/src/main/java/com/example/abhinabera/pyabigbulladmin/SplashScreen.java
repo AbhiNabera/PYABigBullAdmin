@@ -1,6 +1,7 @@
 package com.example.abhinabera.pyabigbulladmin;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -51,9 +52,14 @@ public class SplashScreen extends AppCompatActivity {
         }
 
         else{
-            Intent i = new Intent(SplashScreen.this, MainActivity.class);
-            startActivity(i);
-            overridePendingTransition(R.anim.enter, R.anim.exit);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    startActivity(new Intent(SplashScreen.this, MainActivity.class));
+                    finish();
+                    overridePendingTransition(R.anim.enter, R.anim.exit);
+                }
+            }, 1000);
         }
 
     }

@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/usersBtn"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/transactionChargesBtn"
+        android:drawableLeft="@drawable/ic_user"
+        android:text="users"
+        android:drawablePadding="0dp"
+        android:textSize="20sp"
+        android:textColor="@color/greenText"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/hammersmithoneregular"/>
+
+    <Button
+        android:id="@+id/transactionChargesBtn"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerVertical="true"
+        android:text="transaction charges"
+        android:drawableLeft="@drawable/ic_txn"
+        android:drawablePadding="0dp"
+        android:textSize="20sp"
+        android:textColor="@color/greenText"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/hammersmithoneregular"/>
+
+</RelativeLayout>
